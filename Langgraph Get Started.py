@@ -26,4 +26,22 @@ def add_suffix(state:SimpleState) -> SimpleState:
     output =  state['output_text'] + " . I have added Suffix"
     return {'output_text': output}
 
-print(add_suffix(add_prefix(process_input(state))))
+#print(add_suffix(add_prefix(process_input(state))))
+
+def create_simple_graph():
+    builder = StateGraph(SimpleState)
+
+    #add the nodes
+    builder.add_node("process_input",process_input)
+    builder.add_node("add_prefix", add_prefix)
+    builder.add_node("add_suffix", add_suffix)
+
+    #Connect the edges
+    builder.add_edge(START,"process_input")
+    builder.add_edge("process_input","add_prefix")
+    builder.add_edge("add_prefix","add_suffix")
+    builder.add_edge( "add_suffix",END)
+    graph = builder.compile()
+    return graph
+
+
