@@ -13,7 +13,7 @@ def process_input(state:SimpleState) -> SimpleState:
     output_text = state['input_text'].upper()
     return {'output_text': output_text}
 
-state = {'input_text':'hello','output_text':''}
+
 
 #print(process_input(state))
 def add_prefix(state:SimpleState) -> SimpleState:
@@ -44,4 +44,8 @@ def create_simple_graph():
     graph = builder.compile()
     return graph
 
+graph = create_simple_graph()
 
+state = {'input_text':'hello','output_text':''}
+
+print(graph.invoke(state))
