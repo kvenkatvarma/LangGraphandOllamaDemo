@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0e2d864b-2d86-4e17-b1da-1474a486caa4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/LangGraphandOllamaDemo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Langgraph Get Started.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0000014555557821" />
+      <entry key="S2" value="1.036404967238985" />
+      <entry key="S5" value="1.461762591524668" />
+      <entry key="S10" value="2.8369429821528676" />
+      <entry key="S30" value="8.291307834582325" />
+      <entry key="S60" value="12.862269666438882" />
+      <entry key="M2" value="17.01759206316955" />
+      <entry key="M5" value="20.72803956649719" />
+      <entry key="M10" value="22.267897257600367" />
+      <entry key="M15" value="22.82247555881118" />
+      <entry key="M30" value="23.399461089615816" />
+      <entry key="H1" value="23.696712258271763" />
+      <entry key="H2" value="23.847592069422856" />
+      <entry key="H4" value="23.923603819484967" />
+      <entry key="D1" value="23.987240504139574" />
+      <entry key="W1" value="23.99817655723061" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="1.3270312751406242E-25" />
+      <entry key="MS500" value="1.0582206490565379E-5" />
+      <entry key="S2" value="0.05703909115442168" />
+      <entry key="S5" value="0.32556874318043083" />
+      <entry key="S10" value="0.7013487364628769" />
+      <entry key="S30" value="2.2441564513653596" />
+      <entry key="S60" value="3.690028669225665" />
+      <entry key="M2" value="4.9707285733220585" />
+      <entry key="M5" value="6.067058177381637" />
+      <entry key="M10" value="6.509759176196904" />
+      <entry key="M15" value="6.66758163278429" />
+      <entry key="M30" value="6.83091299072807" />
+      <entry key="H1" value="6.9147211179082335" />
+      <entry key="H2" value="6.957174679433357" />
+      <entry key="H4" value="6.978540612568586" />
+      <entry key="D1" value="6.996416923575399" />
+      <entry key="W1" value="6.999487972177981" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="5.386249087309863E-10" />
+      <entry key="MS500" value="0.014007374894142187" />
+      <entry key="S2" value="0.40464812403585837" />
+      <entry key="S5" value="1.3201194712801694" />
+      <entry key="S10" value="3.1770842517255296" />
+      <entry key="S30" value="10.291273267413402" />
+      <entry key="S60" value="16.375294945704635" />
+      <entry key="M2" value="21.871527746836964" />
+      <entry key="M5" value="26.73729127411254" />
+      <entry key="M10" value="28.746335987967562" />
+      <entry key="M15" value="29.468586544785133" />
+      <entry key="M30" value="30.219328986893576" />
+      <entry key="H1" value="30.605830518433706" />
+      <entry key="H2" value="30.801944871641123" />
+      <entry key="H4" value="30.900728334264503" />
+      <entry key="D1" value="30.983420690830023" />
+      <entry key="W1" value="30.99763069215373" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2,
+  "fromUser": false
+}]]></component>
+  <component name="ProjectId" id="3LVE2WOel93quIMs2g4dhJJD4PA" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "master",
+    "junie.onboarding.icon.badge.shown": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "python.packages.toolwindow.project.migrated.to.right.top.v2": "true",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "to.speed.mode.migration.done": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Langgraph Get Started" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="LangGraphandOllamaDemo" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Langgraph Get Started.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.Langgraph Get Started" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-73a66231627c-5bd6d13a2a75-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-262.10968.92" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0e2d864b-2d86-4e17-b1da-1474a486caa4" name="Changes" comment="" />
+      <created>1793530628355</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1793530628355</updated>
+      <workItem from="1793530629327" duration="402000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>8</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
