@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e2d864b-2d86-4e17-b1da-1474a486caa4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/LangGraphandOllamaDemo.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Langgraph Get Started.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    <list default="true" id="0e2d864b-2d86-4e17-b1da-1474a486caa4" name="Changes" comment="Initial commit with Custom State">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Langgraph Get Started.py" beforeDir="false" afterPath="$PROJECT_DIR$/Langgraph Get Started.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,63 +23,75 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "kvenkatvarma"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/kvenkatvarma/LangGraphandOllamaDemo",
+    "accountId": "08841ea2-abe8-40a9-9930-38eccec2aa2a"
+  }
+}]]></component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
       <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0000014555557821" />
-      <entry key="S2" value="1.036404967238985" />
-      <entry key="S5" value="1.461762591524668" />
-      <entry key="S10" value="2.8369429821528676" />
-      <entry key="S30" value="8.291307834582325" />
-      <entry key="S60" value="12.862269666438882" />
-      <entry key="M2" value="17.01759206316955" />
-      <entry key="M5" value="20.72803956649719" />
-      <entry key="M10" value="22.267897257600367" />
-      <entry key="M15" value="22.82247555881118" />
-      <entry key="M30" value="23.399461089615816" />
-      <entry key="H1" value="23.696712258271763" />
-      <entry key="H2" value="23.847592069422856" />
-      <entry key="H4" value="23.923603819484967" />
-      <entry key="D1" value="23.987240504139574" />
-      <entry key="W1" value="23.99817655723061" />
+      <entry key="MS500" value="1.000234365876165" />
+      <entry key="S2" value="1.2326371466331676" />
+      <entry key="S5" value="2.3015115087883022" />
+      <entry key="S10" value="4.303710513176589" />
+      <entry key="S30" value="12.412383287236723" />
+      <entry key="S60" value="20.033192896407023" />
+      <entry key="M2" value="27.698282015080462" />
+      <entry key="M5" value="40.97816365848228" />
+      <entry key="M10" value="51.989865355696885" />
+      <entry key="M15" value="57.344195476011635" />
+      <entry key="M30" value="63.91045941850643" />
+      <entry key="H1" value="67.7423864826221" />
+      <entry key="H2" value="69.81488264618321" />
+      <entry key="H4" value="70.8929560443195" />
+      <entry key="D1" value="71.81344525054537" />
+      <entry key="W1" value="71.97329870981719" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.3270312751406242E-25" />
-      <entry key="MS500" value="1.0582206490565379E-5" />
-      <entry key="S2" value="0.05703909115442168" />
-      <entry key="S5" value="0.32556874318043083" />
-      <entry key="S10" value="0.7013487364628769" />
-      <entry key="S30" value="2.2441564513653596" />
-      <entry key="S60" value="3.690028669225665" />
-      <entry key="M2" value="4.9707285733220585" />
-      <entry key="M5" value="6.067058177381637" />
-      <entry key="M10" value="6.509759176196904" />
-      <entry key="M15" value="6.66758163278429" />
-      <entry key="M30" value="6.83091299072807" />
-      <entry key="H1" value="6.9147211179082335" />
-      <entry key="H2" value="6.957174679433357" />
-      <entry key="H4" value="6.978540612568586" />
-      <entry key="D1" value="6.996416923575399" />
-      <entry key="W1" value="6.999487972177981" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="1.9758629336507583E-85" />
+      <entry key="S5" value="1.3442386859835563E-34" />
+      <entry key="S10" value="1.42511812093749E-17" />
+      <entry key="S30" value="6.123862228789531E-6" />
+      <entry key="S60" value="0.006095591867175779" />
+      <entry key="M2" value="0.20202872332398064" />
+      <entry key="M5" value="1.6849048777235385" />
+      <entry key="M10" value="3.4305482858675553" />
+      <entry key="M15" value="4.35011512806199" />
+      <entry key="M30" value="5.5175332397210335" />
+      <entry key="H1" value="6.214522594259163" />
+      <entry key="H2" value="6.5955263364443475" />
+      <entry key="H4" value="6.794740668190451" />
+      <entry key="D1" value="6.965362566061655" />
+      <entry key="W1" value="6.99504122203201" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="5.386249087309863E-10" />
-      <entry key="MS500" value="0.014007374894142187" />
-      <entry key="S2" value="0.40464812403585837" />
-      <entry key="S5" value="1.3201194712801694" />
-      <entry key="S10" value="3.1770842517255296" />
-      <entry key="S30" value="10.291273267413402" />
-      <entry key="S60" value="16.375294945704635" />
-      <entry key="M2" value="21.871527746836964" />
-      <entry key="M5" value="26.73729127411254" />
-      <entry key="M10" value="28.746335987967562" />
-      <entry key="M15" value="29.468586544785133" />
-      <entry key="M30" value="30.219328986893576" />
-      <entry key="H1" value="30.605830518433706" />
-      <entry key="H2" value="30.801944871641123" />
-      <entry key="H4" value="30.900728334264503" />
-      <entry key="D1" value="30.983420690830023" />
-      <entry key="W1" value="30.99763069215373" />
+      <entry key="MS100" value="0.003107564389667652" />
+      <entry key="MS500" value="0.3153359842475732" />
+      <entry key="S2" value="0.9757169693772684" />
+      <entry key="S5" value="2.165292570234775" />
+      <entry key="S10" value="4.162644961159374" />
+      <entry key="S30" value="12.245472590808339" />
+      <entry key="S60" value="19.910981334689357" />
+      <entry key="M2" value="27.815069630828205" />
+      <entry key="M5" value="42.609856448298444" />
+      <entry key="M10" value="55.38438975536567" />
+      <entry key="M15" value="61.66707106062191" />
+      <entry key="M30" value="69.41234290875552" />
+      <entry key="H1" value="73.94848069710507" />
+      <entry key="H2" value="76.40603009235558" />
+      <entry key="H4" value="77.68546423646875" />
+      <entry key="D1" value="78.77842959692639" />
+      <entry key="W1" value="78.9682857479105" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
@@ -100,6 +106,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.Langgraph Get Started.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
@@ -163,8 +170,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1793530628355</updated>
-      <workItem from="1793530629327" duration="402000" />
+      <workItem from="1793530629327" duration="955000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial commit with Custom State">
+      <option name="closed" value="true" />
+      <created>1793531132959</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1793531132960</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,6 +197,10 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit with Custom State" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit with Custom State" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -191,5 +211,8 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/LangGraphandOllamaDemo$Langgraph_Get_Started.coverage" NAME="Langgraph Get Started Coverage Results" MODIFIED="1793531039352" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
