@@ -33,4 +33,11 @@ def agent_node(state: AgentState):
 state = {'messages': [HumanMessage("Hi, What is 2+2")]}
 
 result = agent_node(state)
-print(result)
+
+def should_continue(state: AgentState):
+    last = state['messages'][-1]
+
+    if hasattr(last, 'tool_calls') and last.tool_calls:
+        return 'tools'
+    else:
+        return END
