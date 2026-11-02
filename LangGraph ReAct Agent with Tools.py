@@ -30,7 +30,7 @@ def agent_node(state: AgentState):
     return {"messages": [response]}
 
 # Fix 1: Pass the message inside a list
-state = {'messages': [HumanMessage("Hi, What is 2+2")]}
+#state = {'messages': [HumanMessage("Hi, What is 2+2")]}
 
 #result = agent_node(state)
 
@@ -57,4 +57,10 @@ def create_agent():
     graph = builder.compile()
     return graph
 
-graph = create_agent()
+agent = create_agent()
+
+query = "What is the current weather in Hyderabad"
+
+result = agent.invoke({'messages': [HumanMessage(query)]})
+
+print(result['messages'][-1].content)
