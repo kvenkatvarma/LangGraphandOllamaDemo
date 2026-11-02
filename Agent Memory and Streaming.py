@@ -105,4 +105,4 @@ def chat(query, thread_id):
 
 
 query = "What is the current weather in Mumbai?"
-chat(query, "Varma")
+print(chat(query, "Varma"))
