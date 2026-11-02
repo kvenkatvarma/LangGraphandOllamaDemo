@@ -84,11 +84,25 @@ def create_agent():
 
 agent = create_agent()
 
-config = {"configurable": {"thread_id": "Varma"}}
+def chat(query, thread_id):
+
+    config = {"configurable": {"thread_id": thread_id}}
+
+    for chunk in agent.stream({'messages': [query]}, config=config):
+
+        if 'agent' in chunk:
+            chunk = chunk.get('agent')
+        else:
+            chunk = chunk.get('tools')
+
+        if hasattr(chunk, 'tool_calls') and chunk.tool_calls:
+            for tc in chunk.tool_calls:
+                print(f"[AGENT] called Tool {tc.get('name', '?')} with args {tc.get('args', '?')}")
+        else:
+            print(f"[AGENT/ToolMessage] Responding.\n{chunk['messages'][0].content}")
+
+        # print(chunk)
+
 
 query = "What is the current weather in Mumbai?"
-result = agent.invoke({'messages': [HumanMessage(query)]}, config=config)
-
-query = "What is the 2 + 3?"
-result = agent.invoke({'messages': [HumanMessage(query)]}, config=config)
-print(result)
+chat(query, "Varma")
