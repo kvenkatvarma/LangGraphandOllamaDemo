@@ -6,7 +6,7 @@ from pydantic import BaseModel,Field
 
 model = "deepseek-r1"
 
-llm = ChatOllama(model)
+llm = ChatOllama(model=model)
 class SentimentAnalysis(BaseModel):
     sentiment :Literal["positive","negative"] = Field(description="Sentiment Classification either positive or negative")
     confidence: float= Field(ge=0,le=1.0, description="Confidence score from 0.0 to 1.0")
@@ -35,3 +35,16 @@ def analyze_sentiment(state:SentimentState):
     print(f"Sentiment Analysis is done : \n {analysis}")
     return {'sentiment': analysis.sentiment,
             'confidence': analysis.confidence}
+
+state = {'original_tweet': 'I am very Happy'}
+print(analyze_sentiment(state))
+
+def generate_positive_response(state:SentimentState):
+    print(f"Current state of Positive response node : {state}")
+    messages = [
+        SystemMessage(""" Generate a warm response in this positive tweet under 230 chars.
+        confidence : {state['confidence']}. High confidence means be enthusiastic otherwise be friendly."""),
+        HumanMessage(state['original_tweet'])
+    ]
+    response = llm.invoke(messages)
+    return {'response_tweet': response.content.strip()}

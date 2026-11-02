@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e2d864b-2d86-4e17-b1da-1474a486caa4" name="Changes" comment="Created state and Node">
+    <list default="true" id="0e2d864b-2d86-4e17-b1da-1474a486caa4" name="Changes" comment="Added Sentiment node">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Conditional Routing.py" beforeDir="false" afterPath="$PROJECT_DIR$/Conditional Routing.py" afterDir="false" />
     </list>
@@ -37,61 +37,61 @@
 }</component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0000032979480717" />
-      <entry key="MS500" value="1.083439510264272" />
-      <entry key="S2" value="2.196975506100129" />
-      <entry key="S5" value="5.115897913031617" />
-      <entry key="S10" value="9.317633429266893" />
-      <entry key="S30" value="18.301487143122763" />
-      <entry key="S60" value="23.6280808487607" />
-      <entry key="M2" value="27.90322429602738" />
-      <entry key="M5" value="38.6764020177009" />
-      <entry key="M10" value="59.52201699407731" />
-      <entry key="M15" value="76.17298299890786" />
-      <entry key="M30" value="111.98559351093752" />
-      <entry key="H1" value="165.2850382536693" />
-      <entry key="H2" value="226.79442264778507" />
-      <entry key="H4" value="276.84942118209324" />
-      <entry key="D1" value="334.3035218700748" />
-      <entry key="W1" value="345.992476107671" />
+      <entry key="MS100" value="7.129286003780499E-59" />
+      <entry key="MS500" value="2.347643195090039E-12" />
+      <entry key="S2" value="0.0013432680572713787" />
+      <entry key="S5" value="0.09492803202370864" />
+      <entry key="S10" value="0.4756543148970627" />
+      <entry key="S30" value="3.470640047975253" />
+      <entry key="S60" value="10.172616751287082" />
+      <entry key="M2" value="21.74467857557457" />
+      <entry key="M5" value="42.22906421605194" />
+      <entry key="M10" value="68.76537616503525" />
+      <entry key="M15" value="91.89216428098995" />
+      <entry key="M30" value="143.34336375243154" />
+      <entry key="H1" value="211.62077116366189" />
+      <entry key="H2" value="287.3459846450922" />
+      <entry key="H4" value="349.6045707341401" />
+      <entry key="D1" value="422.4161676627772" />
+      <entry key="W1" value="437.41725163299304" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.5760770093104316E-190" />
-      <entry key="MS500" value="1.0952556111589774E-38" />
-      <entry key="S2" value="3.244454474752658E-10" />
-      <entry key="S5" value="1.7668891961509933E-4" />
-      <entry key="S10" value="0.018158343695195263" />
-      <entry key="S30" value="0.57507390691558" />
-      <entry key="S60" value="1.4867692847725318" />
-      <entry key="M2" value="2.4275545432476813" />
-      <entry key="M5" value="3.4178795093056333" />
-      <entry key="M10" value="4.5699592002613" />
-      <entry key="M15" value="5.603468028757005" />
-      <entry key="M30" value="8.101278795100175" />
-      <entry key="H1" value="11.939991869849708" />
-      <entry key="H2" value="16.34502905454169" />
-      <entry key="H4" value="19.92008864440289" />
-      <entry key="D1" value="24.02192003988157" />
-      <entry key="W1" value="24.856630191458635" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0000115160062295" />
+      <entry key="S2" value="1.0582539626183887" />
+      <entry key="S5" value="1.3207230616786896" />
+      <entry key="S10" value="1.5663241666030947" />
+      <entry key="S30" value="1.8273526122214023" />
+      <entry key="S60" value="1.911674721573692" />
+      <entry key="M2" value="2.006077583930976" />
+      <entry key="M5" value="2.836203371903981" />
+      <entry key="M10" value="5.206451709042137" />
+      <entry key="M15" value="7.393703531103391" />
+      <entry key="M30" value="12.048520274038095" />
+      <entry key="H1" value="17.697549506391148" />
+      <entry key="H2" value="23.57495667330219" />
+      <entry key="H4" value="28.275069763193088" />
+      <entry key="D1" value="33.697979729281336" />
+      <entry key="W1" value="34.80890206239699" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.8526374436624077" />
-      <entry key="MS500" value="1.0477568564968405" />
-      <entry key="S2" value="2.1720893694336225" />
-      <entry key="S5" value="5.080818767198297" />
-      <entry key="S10" value="9.261071213541761" />
-      <entry key="S30" value="18.73387298138813" />
-      <entry key="S60" value="24.98062563828359" />
-      <entry key="M2" value="30.234158709075476" />
-      <entry key="M5" value="42.03696279889108" />
-      <entry key="M10" value="64.04613037909317" />
-      <entry key="M15" value="81.73565440998253" />
-      <entry key="M30" value="120.05533088686995" />
-      <entry key="H1" value="177.20184124863874" />
-      <entry key="H2" value="243.12390282418744" />
-      <entry key="H4" value="296.7601801803756" />
-      <entry key="D1" value="358.32359471453185" />
-      <entry key="W1" value="370.84883398885967" />
+      <entry key="MS100" value="6.648998898376874E-12" />
+      <entry key="MS500" value="0.005816763525486403" />
+      <entry key="S2" value="0.3137961531534865" />
+      <entry key="S5" value="0.9553298656644329" />
+      <entry key="S10" value="1.748382648640739" />
+      <entry key="S30" value="5.1238602578857275" />
+      <entry key="S60" value="11.949152628068092" />
+      <entry key="M2" value="23.650379218641294" />
+      <entry key="M5" value="45.000688375748105" />
+      <entry key="M10" value="73.91954248590339" />
+      <entry key="M15" value="99.23811381716547" />
+      <entry key="M30" value="155.35290492051473" />
+      <entry key="H1" value="229.2891589573513" />
+      <entry key="H2" value="310.9013220113948" />
+      <entry key="H4" value="377.86783288443047" />
+      <entry key="D1" value="456.11179822986213" />
+      <entry key="W1" value="472.2258069941633" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -103,28 +103,54 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python.Langgraph Get Started.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;python.packages.toolwindow.project.migrated.to.right.top.v2&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.Conditional Routing.executor": "Run",
+    "Python.Langgraph Get Started.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "master",
+    "junie.onboarding.icon.badge.shown": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "python.packages.toolwindow.project.migrated.to.right.top.v2": "true",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "to.speed.mode.migration.done": "true"
   }
-}</component>
-  <component name="RunManager">
+}]]></component>
+  <component name="RunManager" selected="Python.Conditional Routing">
+    <configuration name="Conditional Routing" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="LangGraphandOllamaDemo" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Conditional Routing.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Langgraph Get Started" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LangGraphandOllamaDemo" />
       <option name="ENV_FILES" value="" />
@@ -152,6 +178,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Conditional Routing" />
         <item itemvalue="Python.Langgraph Get Started" />
       </list>
     </recent_temporary>
@@ -171,6 +198,7 @@
       <option name="presentableId" value="Default" />
       <updated>1793530628355</updated>
       <workItem from="1793530629327" duration="5538000" />
+      <workItem from="1793587812219" duration="1259000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit with Custom State">
       <option name="closed" value="true" />
@@ -220,7 +248,15 @@
       <option name="project" value="LOCAL" />
       <updated>1793538797489</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added Sentiment node">
+      <option name="closed" value="true" />
+      <created>1793588017178</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1793588017178</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,7 +280,8 @@
     <MESSAGE value="Build and Visualize the First Lang Graph" />
     <MESSAGE value="Invoke Graph" />
     <MESSAGE value="Created Pydantic Model" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created Pydantic Model" />
+    <MESSAGE value="Added Sentiment node" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Sentiment node" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -258,6 +295,7 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/LangGraphandOllamaDemo$Conditional_Routing.coverage" NAME="Conditional Routing Coverage Results" MODIFIED="1793588604906" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/LangGraphandOllamaDemo$Langgraph_Get_Started.coverage" NAME="Langgraph Get Started Coverage Results" MODIFIED="1793533423014" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
