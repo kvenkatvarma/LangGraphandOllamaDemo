@@ -59,8 +59,8 @@ def create_agent():
 
 agent = create_agent()
 
-query = "What is the current weather in Hyderabad"
+query = "What is the current weather in Hyderabad and What is 4 *56 and 3-90"
 
 result = agent.invoke({'messages': [HumanMessage(query)]})
 
-print(result['messages'][-1].content)
+print(result['messages'][-1].pretty_print())
