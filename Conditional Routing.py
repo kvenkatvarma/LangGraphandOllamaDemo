@@ -36,11 +36,11 @@ def analyze_sentiment(state:SentimentState):
     return {'sentiment': analysis.sentiment,
             'confidence': analysis.confidence}
 
-state = {'original_tweet': 'I am very Happy'}
+state = {'original_tweet': 'I am very Happy as I earned my AI Certificate'}
 print(analyze_sentiment(state))
 
 def generate_positive_response(state:SentimentState):
-    print(f"Current state of Positive response node : {state}")
+    print(f"Current state in Positive response node : {state}")
     messages = [
         SystemMessage(""" Generate a warm response in this positive tweet under 230 chars.
         confidence : {state['confidence']}. High confidence means be enthusiastic otherwise be friendly."""),
@@ -48,3 +48,19 @@ def generate_positive_response(state:SentimentState):
     ]
     response = llm.invoke(messages)
     return {'response_tweet': response.content.strip()}
+
+def generate_negative_response(state:SentimentState):
+    print(f"Current state in negative response node : {state}")
+    messages = [
+        SystemMessage(""" Generate and empathetic response to this negative tweet under 250 chars.
+        if confidence : {state['confidence']} is ery low then be empathetic otherwise be understanding"""),
+        HumanMessage(state['original_tweet'])
+    ]
+    response = llm.invoke(messages)
+    return {'response_tweet': response.content.strip()}
+
+def route_by_sentiment(state:SentimentState):
+    if state['sentiment'] == 'positive':
+        return "positive_response"
+    else:
+        return "negative_response"
