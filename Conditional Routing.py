@@ -64,3 +64,23 @@ def route_by_sentiment(state:SentimentState):
         return "positive_response"
     else:
         return "negative_response"
+
+def create_router_graph():
+    builder = StateGraph(SentimentState)
+
+    #add nodes
+    builder.add_node("analyze",analyze_sentiment)
+    builder.add_node("positive_response",generate_positive_response)
+    builder.add_node("negative_response",generate_negative_response)
+
+    #add edges
+    builder.add_edge(START,"analyze")
+    builder.add_conditional_edges("analyze",route_by_sentiment,["positive_response","negative_response"])
+
+    builder.add_edge("positive_response",END)
+    builder.add_edge("negative_response",END)
+
+    graph = builder.compile()
+    return graph
+
+graph = create_router_graph()
