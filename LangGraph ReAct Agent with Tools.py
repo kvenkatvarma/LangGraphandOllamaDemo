@@ -32,7 +32,7 @@ def agent_node(state: AgentState):
 # Fix 1: Pass the message inside a list
 state = {'messages': [HumanMessage("Hi, What is 2+2")]}
 
-result = agent_node(state)
+#result = agent_node(state)
 
 def should_continue(state: AgentState):
     last = state['messages'][-1]
@@ -41,3 +41,20 @@ def should_continue(state: AgentState):
         return 'tools'
     else:
         return END
+
+#Create Graph
+
+def create_agent():
+    builder = StateGraph(AgentState)
+    builder.add_node("agent",agent_node)
+    builder.add_node("tools",ToolNode(all_tools))
+
+    builder.add_edge(START,"agent")
+    builder.add_conditional_edges("agent",should_continue,["tools",END])
+
+    builder.add_edge("agent","tools")
+
+    graph = builder.compile()
+    return graph
+
+graph = create_agent()
