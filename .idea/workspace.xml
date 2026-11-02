@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e2d864b-2d86-4e17-b1da-1474a486caa4" name="Changes" comment="tools created">
+    <list default="true" id="0e2d864b-2d86-4e17-b1da-1474a486caa4" name="Changes" comment="Created Agent Node">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LangGraph ReAct Agent with Tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/LangGraph ReAct Agent with Tools.py" afterDir="false" />
     </list>
@@ -37,61 +37,61 @@
 }</component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0000165822580342" />
-      <entry key="MS500" value="1.1110170216762543" />
-      <entry key="S2" value="1.8205345687549481" />
-      <entry key="S5" value="3.063642501656223" />
-      <entry key="S10" value="4.902527401038176" />
-      <entry key="S30" value="10.922923587315797" />
-      <entry key="S60" value="16.649383836063613" />
-      <entry key="M2" value="22.062853297947022" />
-      <entry key="M5" value="27.199848429884373" />
-      <entry key="M10" value="32.643587117168174" />
-      <entry key="M15" value="39.2744468816822" />
-      <entry key="M30" value="57.12595206371285" />
-      <entry key="H1" value="85.47629341123866" />
-      <entry key="H2" value="157.6224958328145" />
-      <entry key="H4" value="285.8189152368902" />
-      <entry key="D1" value="556.9928534160462" />
-      <entry key="W1" value="633.1129595864595" />
+      <entry key="MS100" value="1.0022126777679095" />
+      <entry key="MS500" value="1.3316328768646892" />
+      <entry key="S2" value="2.4622880246280094" />
+      <entry key="S5" value="3.4159929324046514" />
+      <entry key="S10" value="4.57245916560653" />
+      <entry key="S30" value="6.798641388032583" />
+      <entry key="S60" value="8.565394631956298" />
+      <entry key="M2" value="13.226865641241497" />
+      <entry key="M5" value="23.614944037134272" />
+      <entry key="M10" value="33.01376047733008" />
+      <entry key="M15" value="41.03561768999542" />
+      <entry key="M30" value="60.62189328360939" />
+      <entry key="H1" value="90.26768748240833" />
+      <entry key="H2" value="162.7035875895719" />
+      <entry key="H4" value="291.2483871699682" />
+      <entry key="D1" value="564.8280409497964" />
+      <entry key="W1" value="641.9236666885987" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="5.271575673877182E-108" />
-      <entry key="MS500" value="3.5226409254686887E-22" />
-      <entry key="S2" value="5.624527714744805E-6" />
-      <entry key="S5" value="0.013056724209388191" />
-      <entry key="S10" value="0.19035434249095953" />
-      <entry key="S30" value="1.184976293570464" />
-      <entry key="S60" value="1.883057664829426" />
-      <entry key="M2" value="2.3770355484535997" />
-      <entry key="M5" value="2.894893237032658" />
-      <entry key="M10" value="4.105767277451351" />
-      <entry key="M15" value="5.75315098275373" />
-      <entry key="M30" value="10.178417948525109" />
-      <entry key="H1" value="15.697975110521748" />
-      <entry key="H2" value="23.902920873989164" />
-      <entry key="H4" value="35.45161600461506" />
-      <entry key="D1" value="57.80053314358019" />
-      <entry key="W1" value="63.89344744198356" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="3.761657040807785E-179" />
+      <entry key="S2" value="3.215242740586143E-45" />
+      <entry key="S5" value="2.622317739731974E-18" />
+      <entry key="S10" value="2.697666940337598E-9" />
+      <entry key="S30" value="0.0028675973851411307" />
+      <entry key="S60" value="0.09263345798234764" />
+      <entry key="M2" value="0.5272150570647173" />
+      <entry key="M5" value="1.5849421056591457" />
+      <entry key="M10" value="3.0379789112599442" />
+      <entry key="M15" value="4.706514366529558" />
+      <entry key="M30" value="9.20612968795112" />
+      <entry key="H1" value="14.929389216137771" />
+      <entry key="H2" value="23.310424154248558" />
+      <entry key="H4" value="35.00947818360332" />
+      <entry key="D1" value="57.67975997721665" />
+      <entry key="W1" value="63.874358312383535" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.002919629747875647" />
-      <entry key="MS500" value="0.330061148236689" />
-      <entry key="S2" value="1.3048939925282261" />
-      <entry key="S5" value="2.7158915418015086" />
-      <entry key="S10" value="4.774532911501782" />
-      <entry key="S30" value="11.764443251377626" />
-      <entry key="S60" value="18.24006655183918" />
-      <entry key="M2" value="24.239354417947816" />
-      <entry key="M5" value="29.994874600597843" />
-      <entry key="M10" value="36.69003588863484" />
-      <entry key="M15" value="44.980663554501255" />
-      <entry key="M30" value="67.2709510898733" />
-      <entry key="H1" value="101.15093484963036" />
-      <entry key="H2" value="181.50790903371583" />
-      <entry key="H4" value="321.25727040770573" />
-      <entry key="D1" value="614.7896694637463" />
-      <entry key="W1" value="697.0058166705101" />
+      <entry key="MS100" value="0.036029255149813644" />
+      <entry key="MS500" value="0.7978280352453534" />
+      <entry key="S2" value="2.2433868142763984" />
+      <entry key="S5" value="3.308844730718326" />
+      <entry key="S10" value="4.513682537169553" />
+      <entry key="S30" value="6.779337352280621" />
+      <entry key="S60" value="8.632679480611953" />
+      <entry key="M2" value="13.704037640890876" />
+      <entry key="M5" value="25.142962026994045" />
+      <entry key="M10" value="36.006720578117005" />
+      <entry key="M15" value="45.7029838839682" />
+      <entry key="M30" value="69.79741979280334" />
+      <entry key="H1" value="105.17469706821622" />
+      <entry key="H2" value="185.99684382152358" />
+      <entry key="H4" value="326.24472278546557" />
+      <entry key="D1" value="622.5040837440538" />
+      <entry key="W1" value="705.7974336974218" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -225,7 +225,7 @@
       <option name="presentableId" value="Default" />
       <updated>1793530628355</updated>
       <workItem from="1793530629327" duration="5538000" />
-      <workItem from="1793587812219" duration="7248000" />
+      <workItem from="1793587812219" duration="7776000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit with Custom State">
       <option name="closed" value="true" />
@@ -331,7 +331,15 @@
       <option name="project" value="LOCAL" />
       <updated>1793605782671</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Created Agent Node">
+      <option name="closed" value="true" />
+      <created>1793607804207</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1793607804208</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -362,7 +370,8 @@
     <MESSAGE value="Executed Graph" />
     <MESSAGE value="created State with Reducer" />
     <MESSAGE value="tools created" />
-    <option name="LAST_COMMIT_MESSAGE" value="tools created" />
+    <MESSAGE value="Created Agent Node" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created Agent Node" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -378,6 +387,6 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/LangGraphandOllamaDemo$Conditional_Routing.coverage" NAME="Conditional Routing Coverage Results" MODIFIED="1793592189793" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/LangGraphandOllamaDemo$Langgraph_Get_Started.coverage" NAME="Langgraph Get Started Coverage Results" MODIFIED="1793533423014" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/LangGraphandOllamaDemo$LangGraph_ReAct_Agent_with_Tools.coverage" NAME="LangGraph ReAct Agent with Tools Coverage Results" MODIFIED="1793607563579" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/LangGraphandOllamaDemo$LangGraph_ReAct_Agent_with_Tools.coverage" NAME="LangGraph ReAct Agent with Tools Coverage Results" MODIFIED="1793607718394" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

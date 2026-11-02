@@ -21,10 +21,16 @@ def agent_node(state: AgentState):
     messages = state['messages']  # This is now a list of messages
     response = llm_with_tools.invoke(messages)
     # LangGraph nodes should return a dictionary updating the state
+    if hasattr(response, 'tool_calls') and response.tool_calls:
+        for tc in response.tool_calls:
+            print(f"[AGENT] called Tool {tc.get('name', '?')} with args {tc.get('args', '?')}")
+    else:
+        print(f"[AGENT] Responding...")
+
     return {"messages": [response]}
 
 # Fix 1: Pass the message inside a list
-state = {'messages': [HumanMessage("Hi")]}
+state = {'messages': [HumanMessage("Hi, What is 2+2")]}
 
 result = agent_node(state)
 print(result)
