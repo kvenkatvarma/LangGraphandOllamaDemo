@@ -36,8 +36,8 @@ def analyze_sentiment(state:SentimentState):
     return {'sentiment': analysis.sentiment,
             'confidence': analysis.confidence}
 
-state = {'original_tweet': 'I am very Happy as I earned my AI Certificate'}
-print(analyze_sentiment(state))
+
+#print(analyze_sentiment(state))
 
 def generate_positive_response(state:SentimentState):
     print(f"Current state in Positive response node : {state}")
@@ -84,3 +84,6 @@ def create_router_graph():
     return graph
 
 graph = create_router_graph()
+
+state = {'original_tweet': 'I am very Happy as I earned my AI Certificate'}
+graph.invoke(state)
