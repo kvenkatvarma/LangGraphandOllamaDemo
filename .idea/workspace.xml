@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e2d864b-2d86-4e17-b1da-1474a486caa4" name="Changes" comment="Created Agent Node">
+      <change afterPath="$PROJECT_DIR$/Interrupt and Human Loop.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Long Term Memory.py" beforeDir="false" afterPath="$PROJECT_DIR$/Long Term Memory.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,61 +42,61 @@
 }</component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0000001751321108" />
-      <entry key="S2" value="1.0245964425000929" />
-      <entry key="S5" value="1.372116047481079" />
-      <entry key="S10" value="2.0221621597473938" />
-      <entry key="S30" value="3.0834004161256683" />
-      <entry key="S60" value="3.6172779986885417" />
-      <entry key="M2" value="4.4330350686544655" />
-      <entry key="M5" value="5.992235928874742" />
-      <entry key="M10" value="8.263898270297048" />
-      <entry key="M15" value="11.231377936938983" />
-      <entry key="M30" value="21.365863124829275" />
-      <entry key="H1" value="39.62353509923023" />
-      <entry key="H2" value="61.92301446556195" />
-      <entry key="H4" value="90.55752236398227" />
-      <entry key="D1" value="478.89970927859696" />
-      <entry key="W1" value="824.2878945108331" />
+      <entry key="MS100" value="1.0000000000004896" />
+      <entry key="MS500" value="1.0059979367885807" />
+      <entry key="S2" value="1.4826698767171294" />
+      <entry key="S5" value="2.3125851952170793" />
+      <entry key="S10" value="3.083602200384748" />
+      <entry key="S30" value="4.681219419904023" />
+      <entry key="S60" value="5.5970460874415595" />
+      <entry key="M2" value="6.221766452501631" />
+      <entry key="M5" value="6.675041600869506" />
+      <entry key="M10" value="7.0620668273782305" />
+      <entry key="M15" value="7.852189988590212" />
+      <entry key="M30" value="12.9521395011951" />
+      <entry key="H1" value="27.845887866417574" />
+      <entry key="H2" value="52.154259386251624" />
+      <entry key="H4" value="84.75116379230478" />
+      <entry key="D1" value="474.05911449331705" />
+      <entry key="W1" value="829.8461940672515" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="3.053439240686542E-286" />
-      <entry key="S5" value="6.22179522125556E-115" />
-      <entry key="S10" value="7.887835711559642E-58" />
-      <entry key="S30" value="9.239588270057183E-20" />
-      <entry key="S60" value="3.039669176506663E-10" />
-      <entry key="M2" value="1.7437314246571255E-5" />
-      <entry key="M5" value="0.012861994372207409" />
-      <entry key="M10" value="0.13125407145463364" />
-      <entry key="M15" value="0.3114250600629173" />
-      <entry key="M30" value="1.0215728402162982" />
-      <entry key="H1" value="2.8574888613628664" />
-      <entry key="H2" value="5.6384242814057695" />
-      <entry key="H4" value="9.438517648410413" />
-      <entry key="D1" value="51.20218001573921" />
-      <entry key="W1" value="85.83462428285816" />
+      <entry key="MS100" value="4.4391787738269165E-135" />
+      <entry key="MS500" value="1.3472882649572655E-27" />
+      <entry key="S2" value="1.9158660065895123E-7" />
+      <entry key="S5" value="0.0020556352327350713" />
+      <entry key="S10" value="0.045339113718014724" />
+      <entry key="S30" value="0.35658057047728076" />
+      <entry key="S60" value="0.5971436765781587" />
+      <entry key="M2" value="0.7727507208525776" />
+      <entry key="M5" value="0.9020220036100169" />
+      <entry key="M10" value="0.9516949763601583" />
+      <entry key="M15" value="0.9850191677511754" />
+      <entry key="M30" value="1.2340143036131888" />
+      <entry key="H1" value="2.407998667894554" />
+      <entry key="H2" value="4.965636840728023" />
+      <entry key="H4" value="8.917687037145232" />
+      <entry key="D1" value="50.72643957264942" />
+      <entry key="W1" value="86.47680021644356" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="5.825646201452224E-22" />
-      <entry key="MS500" value="5.663484371039616E-5" />
-      <entry key="S2" value="0.09513587473045193" />
-      <entry key="S5" value="0.6284462049351646" />
-      <entry key="S10" value="1.4642169211451304" />
-      <entry key="S30" value="2.81491177313292" />
-      <entry key="S60" value="3.467896462215197" />
-      <entry key="M2" value="4.353956057131869" />
-      <entry key="M5" value="5.972103852252264" />
-      <entry key="M10" value="8.377736311279373" />
-      <entry key="M15" value="11.530403576188869" />
-      <entry key="M30" value="22.379837446735362" />
-      <entry key="H1" value="42.47562223211321" />
-      <entry key="H2" value="67.55757039754958" />
-      <entry key="H4" value="99.993178706866" />
-      <entry key="D1" value="530.0990028685311" />
-      <entry key="W1" value="910.1218046567544" />
+      <entry key="MS100" value="0.870550563296428" />
+      <entry key="MS500" value="0.9779336977429883" />
+      <entry key="S2" value="1.4563125783479711" />
+      <entry key="S5" value="2.272189868372633" />
+      <entry key="S10" value="3.064797331162907" />
+      <entry key="S30" value="4.950400643102107" />
+      <entry key="S60" value="6.1266640693019205" />
+      <entry key="M2" value="6.952169857221256" />
+      <entry key="M5" value="7.557601218256511" />
+      <entry key="M10" value="8.003295924808437" />
+      <entry key="M15" value="8.829529634642276" />
+      <entry key="M30" value="14.180741528187657" />
+      <entry key="H1" value="30.24940974992042" />
+      <entry key="H2" value="57.116265085905184" />
+      <entry key="H4" value="93.66599393484533" />
+      <entry key="D1" value="524.7826744826018" />
+      <entry key="W1" value="916.3222722107305" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -113,6 +113,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Python.Agent Memory and Streaming.executor": "Run",
     "Python.Conditional Routing.executor": "Run",
+    "Python.Interrupt and Human Loop.executor": "Run",
     "Python.LangGraph ReAct Agent with Tools.executor": "Run",
     "Python.Langgraph Get Started.executor": "Run",
     "Python.Long Term Memory.executor": "Run",
@@ -134,7 +135,7 @@
     "to.speed.mode.migration.done": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Python.Long Term Memory">
+  <component name="RunManager" selected="Python.Interrupt and Human Loop">
     <configuration name="Agent Memory and Streaming" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LangGraphandOllamaDemo" />
       <option name="ENV_FILES" value="" />
@@ -160,7 +161,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Conditional Routing" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Interrupt and Human Loop" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LangGraphandOllamaDemo" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -176,7 +177,7 @@
       <option name="DEBUG_JUST_MY_CODE" value="false" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="RUN_TOOL" value="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Conditional Routing.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Interrupt and Human Loop.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -262,11 +263,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Interrupt and Human Loop" />
         <item itemvalue="Python.Long Term Memory" />
         <item itemvalue="Python.Short Term Memory" />
         <item itemvalue="Python.Agent Memory and Streaming" />
         <item itemvalue="Python.LangGraph ReAct Agent with Tools" />
-        <item itemvalue="Python.Conditional Routing" />
       </list>
     </recent_temporary>
   </component>
@@ -285,7 +286,7 @@
       <option name="presentableId" value="Default" />
       <updated>1793530628355</updated>
       <workItem from="1793530629327" duration="5538000" />
-      <workItem from="1793587812219" duration="28778000" />
+      <workItem from="1793587812219" duration="30170000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit with Custom State">
       <option name="closed" value="true" />
@@ -527,7 +528,15 @@
       <option name="project" value="LOCAL" />
       <updated>1793685814827</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Created Agent Node">
+      <option name="closed" value="true" />
+      <created>1793688253542</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1793688253542</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -587,6 +596,7 @@
     <SUITE FILE_PATH="coverage/LangGraphandOllamaDemo$Conditional_Routing.coverage" NAME="Conditional Routing Coverage Results" MODIFIED="1793592189793" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/LangGraphandOllamaDemo$Agent_Memory_and_Streaming.coverage" NAME="Agent Memory and Streaming Coverage Results" MODIFIED="1793618567709" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/LangGraphandOllamaDemo$Short_Term_Memory.coverage" NAME="Short Term Memory Coverage Results" MODIFIED="1793678912738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/LangGraphandOllamaDemo$Interrupt_and_Human_Loop.coverage" NAME="Interrupt and Human Loop Coverage Results" MODIFIED="1793691299959" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/LangGraphandOllamaDemo$Long_Term_Memory.coverage" NAME="Long Term Memory Coverage Results" MODIFIED="1793687650595" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/LangGraphandOllamaDemo$Langgraph_Get_Started.coverage" NAME="Langgraph Get Started Coverage Results" MODIFIED="1793533423014" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/LangGraphandOllamaDemo$LangGraph_ReAct_Agent_with_Tools.coverage" NAME="LangGraph ReAct Agent with Tools Coverage Results" MODIFIED="1793612405390" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
