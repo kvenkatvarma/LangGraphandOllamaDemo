@@ -72,3 +72,15 @@ store.put(namespace, "work", {
 
 #print(store.get(namespace, "color"))
 #store.delete(namespace, "color")
+
+# =============================================================================
+# Demo 2: Semantic Search
+# =============================================================================
+
+query = "What does Venkat Varma like to eat?"
+results = store.search(namespace, query=query, limit=1)
+print(results)
+
+query = "What does Venkat Varma like in colors?"
+results = store.search(namespace, query=query, limit=1)
+print(results)
