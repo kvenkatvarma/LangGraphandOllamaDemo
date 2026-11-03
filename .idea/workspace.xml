@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e2d864b-2d86-4e17-b1da-1474a486caa4" name="Changes" comment="Put, Get and delete Long term memory">
+    <list default="true" id="0e2d864b-2d86-4e17-b1da-1474a486caa4" name="Changes" comment="Implemented Semantic Search">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Long Term Memory.py" beforeDir="false" afterPath="$PROJECT_DIR$/Long Term Memory.py" afterDir="false" />
     </list>
@@ -42,61 +42,61 @@
 }</component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0004985410770055" />
-      <entry key="MS500" value="1.2189950928105442" />
-      <entry key="S2" value="1.9300928734785407" />
-      <entry key="S5" value="2.9153861355108868" />
-      <entry key="S10" value="3.829188315937631" />
-      <entry key="S30" value="5.021453038464865" />
-      <entry key="S60" value="5.4899957670694315" />
-      <entry key="M2" value="6.20896232442547" />
-      <entry key="M5" value="8.87499608768956" />
-      <entry key="M10" value="11.683538914080154" />
-      <entry key="M15" value="13.939515616093328" />
-      <entry key="M30" value="22.14206783936324" />
-      <entry key="H1" value="36.775230094036466" />
-      <entry key="H2" value="52.31190399951908" />
-      <entry key="H4" value="75.50702585716948" />
-      <entry key="D1" value="462.8103565114174" />
-      <entry key="W1" value="798.4602682886912" />
+      <entry key="MS100" value="1.0056461068187454" />
+      <entry key="MS500" value="1.4861976382608688" />
+      <entry key="S2" value="3.221538087821779" />
+      <entry key="S5" value="4.52241934055742" />
+      <entry key="S10" value="5.2392793993178115" />
+      <entry key="S30" value="6.973860949504606" />
+      <entry key="S60" value="8.609650529009045" />
+      <entry key="M2" value="10.326552784917519" />
+      <entry key="M5" value="13.704114246622646" />
+      <entry key="M10" value="16.891848116262288" />
+      <entry key="M15" value="19.30472703917465" />
+      <entry key="M30" value="27.635226736368143" />
+      <entry key="H1" value="42.35363199596594" />
+      <entry key="H2" value="58.01173363990822" />
+      <entry key="H4" value="81.29036743178236" />
+      <entry key="D1" value="468.5893100420083" />
+      <entry key="W1" value="804.4057883571872" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.713283943551553E-45" />
-      <entry key="MS500" value="1.1136939719096976E-9" />
-      <entry key="S2" value="0.005776855005644927" />
-      <entry key="S5" value="0.12725550738848385" />
-      <entry key="S10" value="0.3567288990094352" />
-      <entry key="S30" value="0.7092174801362647" />
-      <entry key="S60" value="0.8421505091943272" />
-      <entry key="M2" value="0.9176875880137213" />
-      <entry key="M5" value="0.9662377496913925" />
-      <entry key="M10" value="0.9936772417533508" />
-      <entry key="M15" value="1.091623924979379" />
-      <entry key="M30" value="2.0017628413799504" />
-      <entry key="H1" value="4.165829338511401" />
-      <entry key="H2" value="6.668077951241842" />
-      <entry key="H4" value="10.043211246802514" />
-      <entry key="D1" value="51.60711821124388" />
-      <entry key="W1" value="85.16830989392366" />
+      <entry key="MS100" value="1.1502067862227634E-224" />
+      <entry key="MS500" value="1.629878328046409E-45" />
+      <entry key="S2" value="6.353876896024769E-12" />
+      <entry key="S5" value="3.320592009555866E-5" />
+      <entry key="S10" value="0.00576245781724766" />
+      <entry key="S30" value="0.17928168270397554" />
+      <entry key="S60" value="0.42341667740415667" />
+      <entry key="M2" value="0.6507047544041874" />
+      <entry key="M5" value="0.8420922097389894" />
+      <entry key="M10" value="0.9276479041237733" />
+      <entry key="M15" value="1.042713336851767" />
+      <entry key="M30" value="1.9564041017401712" />
+      <entry key="H1" value="4.118361307332062" />
+      <entry key="H2" value="6.629979011296513" />
+      <entry key="H4" value="10.014478542129797" />
+      <entry key="D1" value="51.5824816229805" />
+      <entry key="W1" value="85.16250037972272" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.8709815706185318" />
-      <entry key="MS500" value="1.1853535685865146" />
-      <entry key="S2" value="1.9126158247723402" />
-      <entry key="S5" value="2.9690476206284853" />
-      <entry key="S10" value="4.086287513838299" />
-      <entry key="S30" value="5.661248524551393" />
-      <entry key="S60" value="6.28998438480194" />
-      <entry key="M2" value="7.103206117770088" />
-      <entry key="M5" value="9.83076217640337" />
-      <entry key="M10" value="12.67152508893911" />
-      <entry key="M15" value="15.026927626122715" />
-      <entry key="M30" value="24.140229836856705" />
-      <entry key="H1" value="40.93752664212618" />
-      <entry key="H2" value="58.97720625179674" />
-      <entry key="H4" value="85.54799563132782" />
-      <entry key="D1" value="514.4146764065563" />
-      <entry key="W1" value="883.6278847953994" />
+      <entry key="MS100" value="0.9448643677922502" />
+      <entry key="MS500" value="1.4687935196450872" />
+      <entry key="S2" value="3.2132015681068227" />
+      <entry key="S5" value="4.517934063984693" />
+      <entry key="S10" value="5.240889430104363" />
+      <entry key="S30" value="7.134667273378879" />
+      <entry key="S60" value="9.011395073344861" />
+      <entry key="M2" value="10.960394482750557" />
+      <entry key="M5" value="14.536983646247496" />
+      <entry key="M10" value="17.81413471599482" />
+      <entry key="M15" value="20.343384881376497" />
+      <entry key="M30" value="29.588095426463347" />
+      <entry key="H1" value="46.46849268413603" />
+      <entry key="H2" value="64.63894876899852" />
+      <entry key="H4" value="91.30260889243488" />
+      <entry key="D1" value="520.1689943478237" />
+      <entry key="W1" value="889.5675953488565" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -285,7 +285,7 @@
       <option name="presentableId" value="Default" />
       <updated>1793530628355</updated>
       <workItem from="1793530629327" duration="5538000" />
-      <workItem from="1793587812219" duration="25187000" />
+      <workItem from="1793587812219" duration="25788000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit with Custom State">
       <option name="closed" value="true" />
@@ -495,7 +495,15 @@
       <option name="project" value="LOCAL" />
       <updated>1793683733038</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Implemented Semantic Search">
+      <option name="closed" value="true" />
+      <created>1793684315252</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1793684315252</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -537,7 +545,8 @@
     <MESSAGE value="Storing history in Postgresql" />
     <MESSAGE value="Retrieve History from PostGreSQL" />
     <MESSAGE value="Put, Get and delete Long term memory" />
-    <option name="LAST_COMMIT_MESSAGE" value="Put, Get and delete Long term memory" />
+    <MESSAGE value="Implemented Semantic Search" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented Semantic Search" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -554,7 +563,7 @@
     <SUITE FILE_PATH="coverage/LangGraphandOllamaDemo$Conditional_Routing.coverage" NAME="Conditional Routing Coverage Results" MODIFIED="1793592189793" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/LangGraphandOllamaDemo$Agent_Memory_and_Streaming.coverage" NAME="Agent Memory and Streaming Coverage Results" MODIFIED="1793618567709" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/LangGraphandOllamaDemo$Short_Term_Memory.coverage" NAME="Short Term Memory Coverage Results" MODIFIED="1793678912738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/LangGraphandOllamaDemo$Long_Term_Memory.coverage" NAME="Long Term Memory Coverage Results" MODIFIED="1793683682943" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/LangGraphandOllamaDemo$Long_Term_Memory.coverage" NAME="Long Term Memory Coverage Results" MODIFIED="1793684242608" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/LangGraphandOllamaDemo$Langgraph_Get_Started.coverage" NAME="Langgraph Get Started Coverage Results" MODIFIED="1793533423014" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/LangGraphandOllamaDemo$LangGraph_ReAct_Agent_with_Tools.coverage" NAME="LangGraph ReAct Agent with Tools Coverage Results" MODIFIED="1793612405390" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>

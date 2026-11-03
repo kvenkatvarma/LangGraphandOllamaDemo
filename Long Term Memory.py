@@ -54,7 +54,7 @@ store.setup()
 # =============================================================================
 
 # Memory Operations: put(), get(), search(), delete()
-
+"""
 user_id = "VenkatVarma"
 namespace = (user_id, "preferences")
 
@@ -84,3 +84,33 @@ print(results)
 query = "What does Venkat Varma like in colors?"
 results = store.search(namespace, query=query, limit=1)
 print(results)
+"""
+
+# State Definition
+
+class AgentState(TypedDict):
+    messages: Annotated[list, operator.add]
+    user_id: str
+
+# =============================================================================
+# Tools for Memory Management
+# =============================================================================
+
+# save user memory and get user memory
+
+@tool
+def save_user_memory(user_id:str, category:str, information:dict) -> str:
+    """
+    Save user preference or information to long-term memory.
+
+    Args:
+        user_id: User identifier
+        category: Category of information (e.g., 'food', 'work', 'hobbies', 'schedule', 'location')
+        information: Dictionary containing the information to save
+    """
+
+    namespace = (user_id, "preferences")
+
+    store.put(namespace, category, information)
+
+    return f"Saved {category} preferences."
