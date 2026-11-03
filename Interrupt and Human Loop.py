@@ -185,7 +185,7 @@ def chat(query, thread_id):
     result['messages'][-1].pretty_print()
 
 
-query = "Transfer 5000 to Venkat."
+query = "Transfer 5000 to Venkat@email.com."
 thread_id = "demo-2"
 
 chat(query, thread_id)
