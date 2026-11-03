@@ -129,5 +129,12 @@ checkpointer.setup()
 
 agent = create_agent(checkpointer)
 
-query = "What is 2+3"
+query = "What is 2 * 90"
 chat(agent, query, "Varma")
+
+#Another way to connect to Postgrey
+with PostgresSaver.from_conn_string(os.getenv("POSTGRESQL_URL")) as conn:
+    agent = create_agent(checkpointer)
+
+    query = "How many questions I have asked previously? Tell me all"
+    chat(agent, query, "Varma")
