@@ -18,6 +18,7 @@ from langchain_core.messages import HumanMessage, SystemMessage
 from langchain_core.tools import tool
 import psycopg
 import os
+import my_tools
 
 # Configuration
 
@@ -140,4 +141,90 @@ def get_user_memory(user_id: str, category: str) -> str:
         return f"No '{category}' information found!"
 
 
-print(get_user_memory.invoke({"user_id": 'VenkatVarma', "category": 'color'}))
+#print(get_user_memory.invoke({"user_id": 'VenkatVarma', "category": 'color'}))
+all_tools = [my_tools.get_weather, my_tools.calculate]
+
+
+def agent_node(state: AgentState):
+    store_conn = psycopg.connect(db_url, autocommit=True, prepare_threshold=0)
+    store = PostgresStore(store_conn, index={'embed': embed_texts, 'dims': 768})
+
+    user_id = state.get("user_id", "unknown")
+    namespace = (user_id, "preferences")
+
+    last_message = state['messages'][-1].content
+    memories = store.search(namespace, query=last_message, limit=3)
+
+    # build context memory for personalized answer
+    context_line = []
+    for mem in memories:
+        text = f" -{mem.key}: {mem.value}"
+        context_line.append(text)
+
+    memory_text = "\n\n".join(context_line) if context_line else "No user preferences stored yet!"
+
+    print(f"User Memory Retrieved: \n{memory_text}\n")
+
+    tools = all_tools + [save_user_memory, get_user_memory]
+
+    llm_with_tools = llm.bind_tools(tools)
+
+    system_prompt = SystemMessage(f"""
+                        You are a helpful assistant with long-term memory capabilities and access to utility tools.
+
+                            User ID: {user_id}
+                            Current User Memories:
+                            {memory_text}
+
+                            MEMORY TOOLS USAGE:
+
+                            1. save_user_memory: Use when user shares NEW information
+                            - Always pass user_id: "{user_id}"
+                            - Food preferences (diet, likes, dislikes, allergies)
+                            - Work information (role, company, interests)
+                            - Hobbies and activities
+                            - Schedule and availability
+                            - Location and timezone
+
+                            2. get_user_memory: Use when you need to recall specific category
+                            - Always pass user_id: "{user_id}"
+                            - When answering questions about past preferences
+                            - When user asks "what do you know about me?"
+                            - When making recommendations based on preferences
+
+                            UTILITY TOOLS USAGE:
+
+                            3. get_weather: Use to retrieve current weather information
+                            - Pass location as parameter (city name, zip code, or coordinates)
+                            - Use when user asks about weather conditions
+                            - Use when planning activities that depend on weather
+                            - Examples: "What's the weather in London?", "Will it rain today?"
+
+                            4. calculate: Use to perform mathematical calculations
+                            - Pass mathematical expression as string parameter
+                            - Supports basic arithmetic (+, -, *, /)
+                            - Supports advanced operations (powers, roots, trigonometry)
+                            - Use when user needs numerical computations
+                            - Examples: "What's 15% of 250?", "Calculate the area of a circle with radius 5"
+
+                            GUIDELINES:
+                            - Always save when user shares personal information
+                            - Retrieve specific categories when needed for context
+                            - Use semantic search results shown above for general context
+                            - Use get_weather when location-based weather info is needed
+                            - Use calculate for any mathematical operations or conversions
+                            - Be conversational and natural when using all tools
+                            - Combine tools when appropriate (e.g., weather + saved location preference)
+                        """)
+
+    messages = [system_prompt] + state['messages']
+
+    response = llm_with_tools.invoke(messages)
+
+    if hasattr(response, 'tool_calls') and response.tool_calls:
+        for tc in response.tool_calls:
+            print(f"[AGENT] called Tool {tc.get('name', '?')} with args {tc.get('args', '?')}")
+    else:
+        print(f"[AGENT] Responding...")
+
+    return {'messages': [response]}
