@@ -77,3 +77,25 @@ def guardrail_node(state: AgentState):
             }
 
     return {"messages": []}
+
+# =============================================================================
+# Agent Node
+# =============================================================================
+
+def agent_node(state:AgentState):
+
+    tools = [transfer_money]
+
+    llm_with_tools = llm.bind_tools(tools)
+
+    system_message = SystemMessage("You are a financial assistant. use transfer_money tool to transfer the money.")
+
+    messages = [system_message] + state['messages']
+
+    response = llm_with_tools.invoke(messages)
+
+    if hasattr(response, 'tool_calls') and response.tool_calls:
+        for tc in response.tool_calls:
+            print(f"[AGENT] called Tool {tc.get('name', '?')} with args {tc.get('args', '?')}")
+    else:
+        print(f"[AGENT] Responding...")
