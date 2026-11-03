@@ -19,7 +19,7 @@ from langchain_core.tools import tool
 import psycopg
 import os
 import my_tools
-
+from langgraph.prebuilt import ToolNode
 # Configuration
 
 MODEL_NAME = "llama3.2"
@@ -228,3 +228,49 @@ def agent_node(state: AgentState):
         print(f"[AGENT] Responding...")
 
     return {'messages': [response]}
+
+
+# Routing
+def should_continue(state: AgentState):
+    last = state['messages'][-1]
+
+    if hasattr(last, 'tool_calls') and last.tool_calls:
+        return "tools"
+    else:
+        return END
+
+
+# =============================================================================
+# Graph
+# =============================================================================
+
+tools = all_tools + [save_user_memory, get_user_memory]
+
+
+def create_agent():
+    builder = StateGraph(AgentState)
+
+    builder.add_node("agent", agent_node)
+    builder.add_node("tools", ToolNode(tools))
+
+    builder.add_edge(START, "agent")
+    builder.add_conditional_edges("agent", should_continue, ["tools", END])
+
+    builder.add_edge("tools", "agent")
+
+    checkpointer_conn = psycopg.connect(db_url, autocommit=True, prepare_threshold=0)
+    checkpointer = PostgresSaver(checkpointer_conn)
+    graph = builder.compile(checkpointer=checkpointer)
+
+    return graph
+
+agent = create_agent()
+
+user_id = "VenkatVarma"
+config = {'configurable': {'thread_id': f"{user_id}_longterm"}}
+
+query = "I am Venkat Varma. I love AI and machine learning in python."
+
+result = agent.invoke({'messages': [HumanMessage(query)],
+                       'user_id': user_id}, config=config)
+print(result['messages'][-1].pretty_print())
