@@ -12,10 +12,13 @@ from langgraph.prebuilt import ToolNode
 import os
 import re
 import sqlite3
+from dotenv import load_dotenv
 
 # Configuration
 MODEL_NAME = "llama3.2"
 llm = ChatOllama(model=MODEL_NAME)
+
+load_dotenv()
 
 db_name = "db/checkpoints.db"
 
@@ -161,4 +164,12 @@ def create_agent():
 
 agent = create_agent()
 
+config = {"configurable": {'thread_id': 'demo-2'}}
+
+query = "Transfer 500 to XYZ."
+result = agent.invoke({
+    "messages": [HumanMessage(query)]
+}, config)
+
+print(result)
 
