@@ -11,12 +11,18 @@ from langchain_core.tools import tool
 from langgraph.prebuilt import ToolNode
 import os
 import re
+import sqlite3
 
 # Configuration
 MODEL_NAME = "llama3.2"
 llm = ChatOllama(model=MODEL_NAME)
 
+db_name = "db/checkpoints.db"
 
+# if os.path.exists("db_name"):
+#     os.removedirs(db_name)
+
+os.makedirs('db', exist_ok=True)
 # =============================================================================
 # State Definition
 # =============================================================================
@@ -123,3 +129,36 @@ def guardrail_router(state: AgentState):
         return END
 
     return 'agent'
+
+# =============================================================================
+# Graph Construction
+# =============================================================================
+
+def create_agent():
+
+    builder = StateGraph(AgentState)
+
+    # add all nodes
+    builder.add_node("guardrail", guardrail_node)
+    builder.add_node("agent", agent_node)
+    builder.add_node("tools", ToolNode([transfer_money]))
+
+    # add egdes
+    builder.add_edge(START, "guardrail")
+    builder.add_conditional_edges("guardrail", guardrail_router, ['agent', END])
+    builder.add_conditional_edges("agent", should_continue, ['tools', END])
+
+    builder.add_edge("tools", "agent")
+
+    # always get a fresh connection
+    conn = sqlite3.connect(db_name, check_same_thread=False)
+    checkpointer = SqliteSaver(conn)
+
+    graph = builder.compile(checkpointer=checkpointer)
+
+    return graph
+
+
+agent = create_agent()
+
+
