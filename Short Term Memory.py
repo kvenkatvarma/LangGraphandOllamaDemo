@@ -2,10 +2,10 @@ from typing_extensions import TypedDict, Annotated
 import operator
 from langgraph.graph import StateGraph, START, END
 from langgraph.checkpoint.memory import MemorySaver
-
+from dotenv import load_dotenv
 from langgraph.checkpoint.sqlite import SqliteSaver
 from langgraph.checkpoint.postgres import PostgresSaver
-
+import psycopg
 from langchain_ollama import ChatOllama
 from langchain_core.messages import HumanMessage, SystemMessage
 from langgraph.prebuilt import ToolNode
@@ -13,6 +13,7 @@ import os
 import sqlite3
 import my_tools
 
+load_dotenv()
 MODEL_NAME = "llama3.2"
 
 llm = ChatOllama(model=MODEL_NAME)
@@ -117,5 +118,16 @@ def chat(agent, query, thread_id):
 
 agent = create_agent(checkpointer)
 
-query = "What is the current weather in New Delhi?"
+query = "What is 2+3"
+chat(agent, query, "Varma")
+
+#https://console.neon.tech/
+
+conn = psycopg.connect(os.getenv("POSTGRESQL_URL"),autocommit=True,prepare_threshold=0)
+checkpointer = PostgresSaver(conn)
+checkpointer.setup()
+
+agent = create_agent(checkpointer)
+
+query = "What is 2+3"
 chat(agent, query, "Varma")
