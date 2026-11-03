@@ -52,3 +52,28 @@ def transfer_money(amount:int, recipient:str):
     return f"Transferred {amount} to {recipient}"
 
 #print(transfer_money.invoke({'amount':100000,'recipient':'Venkat'}))
+
+# =============================================================================
+# Guardrail Node - PII Detection
+# =============================================================================
+# PII Pattern Definitions
+patterns = {
+    "SSN": r'\b\d{3}-\d{2}-\d{4}\b',  # SSN: 123-45-6789
+    "Credit Card": r'\b\d{4}[\s-]?\d{4}[\s-]?\d{4}[\s-]?\d{4}\b',  # Credit Card: 1234-5678-9012-3456
+    "Mobile Number": r'\b(\+?\d{1,3}[-.\s]?)?\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}\b',  # Mobile: +1-234-567-8900
+    "Email": r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b',  # Email: user@example.com
+    "URL/Link": r'https?://[^\s]+|www\.[^\s]+'  # URL: http://example.com or www.example.com
+}
+
+
+def guardrail_node(state: AgentState):
+    last_message = state['messages'][-1].content
+
+    for pii_type, pattern in patterns.items():
+        if re.search(pattern, last_message):
+            return {
+                "messages": [SystemMessage(
+                    f"Request Blocked: Contains {pii_type}. Please don't share sensitive personal information")]
+            }
+
+    return {"messages": []}
