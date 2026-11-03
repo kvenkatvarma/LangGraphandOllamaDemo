@@ -166,10 +166,27 @@ agent = create_agent()
 
 config = {"configurable": {'thread_id': 'demo-2'}}
 
-query = "Transfer 500 to XYZ."
-result = agent.invoke({
-    "messages": [HumanMessage(query)]
-}, config)
 
-print(result)
+def chat(query, thread_id):
+    config = {"configurable": {'thread_id': thread_id}}
+    result = agent.invoke({
+        "messages": [HumanMessage(query)]
+    }, config)
+
+    if '__interrupt__' in result:
+        # use this data in front end design for approval workflow
+        interrupt_data = result['__interrupt__'][0]
+
+        result = agent.invoke(
+            Command(resume={'decision': input("do you approve or reject?")}),
+            config
+        )
+
+    result['messages'][-1].pretty_print()
+
+
+query = "Transfer 5000 to Venkat."
+thread_id = "demo-2"
+
+chat(query, thread_id)
 
