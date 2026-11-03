@@ -114,3 +114,30 @@ def save_user_memory(user_id:str, category:str, information:dict) -> str:
     store.put(namespace, category, information)
 
     return f"Saved {category} preferences."
+
+
+# if you want to use store.search
+# @tool
+# def get_user_memory(user_id:str, query:str) -> str:
+# store.search(namespace, query)
+@tool
+def get_user_memory(user_id: str, category: str) -> str:
+    """
+        Retrieve user preference or information from long-term memory.
+
+        Args:
+            user_id: User identifier
+            category: Category of information to retrieve (e.g., 'food', 'work', 'hobbies')
+        """
+
+    namespace = (user_id, "preferences")
+
+    item = store.get(namespace, category)
+
+    if item:
+        return f"{category}: {item.value}"
+    else:
+        return f"No '{category}' information found!"
+
+
+print(get_user_memory.invoke({"user_id": 'VenkatVarma', "category": 'color'}))
