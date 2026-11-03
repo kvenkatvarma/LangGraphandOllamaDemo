@@ -99,3 +99,27 @@ def agent_node(state:AgentState):
             print(f"[AGENT] called Tool {tc.get('name', '?')} with args {tc.get('args', '?')}")
     else:
         print(f"[AGENT] Responding...")
+
+    return {"messages": [response]}
+
+
+## Conditional Edges
+# guardrail, agent
+
+def should_continue(state: AgentState):
+    last = state['messages'][-1]
+
+    if hasattr(last, 'tool_calls') and last.tool_calls:
+        return "tools"
+    else:
+        return END
+
+
+def guardrail_router(state: AgentState):
+    last = state['messages'][-1]
+
+    if isinstance(last, SystemMessage):
+        last.pretty_print()
+        return END
+
+    return 'agent'
